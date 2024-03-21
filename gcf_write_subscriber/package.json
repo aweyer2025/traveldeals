@@ -1,5 +1,5 @@
 {
-  "name": "gcf_email_welcome",
+  "name": "gcf_write_subscriber",
   "version": "1.0.0",
   "description": "GCF to email a new subscriber",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/firestore": "^7.4.0",
     "@sendgrid/mail": "^8.1.1",
     "dotenv": "^16.4.5"
   }

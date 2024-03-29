@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/firestore": "^7.5.0"
+    "@google-cloud/firestore": "^7.5.0",
+    "@sendgrid/mail": "^8.1.1",
+    "dotenv": "^16.4.5"
   }
 }

@@ -20,6 +20,7 @@ exports.write_subscriber = (message, context) => {
     let watchObj = {};
 
     watchObj.email_address = parsedMessage.email_address
+    watchObj.phone_number = parsedMessage.phone_number
     watchObj.watch_regions = parsedMessage.watch_region
 
     //write to firestore

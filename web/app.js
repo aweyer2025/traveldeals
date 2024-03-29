@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
 app.post('/subscribe', async (req, res) => {
   const email = req.body.email_address;
   const regions = req.body.watch_region;
+  const phone = req.body.phone_number;
 
 
   //Create a PubSub client
@@ -33,6 +34,7 @@ app.post('/subscribe', async (req, res) => {
   //Create the "Payload" for our message
   const message_data = JSON.stringify({
     email_address: email,
+    phone_number: phone,
     watch_region: regions
   });
 
